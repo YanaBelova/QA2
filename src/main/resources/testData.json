@@ -1,5 +1,5 @@
 {
-  "userIdOf99port" : "10",
-  "idOf99port" : "99",
-  "userIdToPostAPI" : "1"
+  "delayTime" :  "500",
+  "fileName"  :  "\\avatar.jpg",
+  "expectedResultForTimerTest" : "00:00:00"
 }
