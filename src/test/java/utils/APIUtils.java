@@ -1,8 +1,8 @@
 package utils;
 
 import api.task.API;
-import api.task.Post;
-import api.task.User;
+import APIModels.Post;
+import APIModels.User;
 import aquality.selenium.browser.AqualityServices;
 import com.google.gson.Gson;
 import kong.unirest.GenericType;
@@ -10,7 +10,6 @@ import kong.unirest.HttpResponse;
 import kong.unirest.UnirestException;
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONException;
-import kong.unirest.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,7 +21,7 @@ public class APIUtils {
     }
 
     public static HttpResponse<String> getAPIAsString(String url){
-        return API.getAPI(url).asString();
+        return API.getRequestOfAPI(url).asString();
     }
 
     public static List<User> getUsersList(HttpResponse<String> response){
@@ -35,7 +34,7 @@ public class APIUtils {
     public static HttpResponse<List<Post>> getAPIPostList(String url){
         HttpResponse<List<Post>> postResponsePosts = null;
         try {
-            postResponsePosts = API.getAPI(url).asObject(new GenericType<List<Post>>(){});
+            postResponsePosts = API.getRequestOfAPI(url).asObject(new GenericType<List<Post>>(){});
         } catch (UnirestException e) {
             AqualityServices.getLogger().warn("Exception while creating jsonResponse");
         }
@@ -53,7 +52,7 @@ public class APIUtils {
         return !(value.length()==0);
     }
 
-    public static boolean checkingSort(HttpResponse<List<Post>> postResponse){
+    public static boolean checkSort(HttpResponse<List<Post>> postResponse){
         List<Object> idList = new ArrayList<>();
         for(int i = 0; i<getBodyOfPostList(postResponse).size(); i++) {
             idList.add(APIUtils.getIdValue(postResponse, i));

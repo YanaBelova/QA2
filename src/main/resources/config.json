@@ -1,12 +1,13 @@
 {
-  "baseURL": "https://vk.com/",
-  "urlScheme" : "http",
-  "urlHost" : "api.vk.com",
-  "urlPath" : "/method/",
-  "emailOrPhone" : "",
-  "password" : "",
-  "accessToken" : "",
-  "version" : "5.131",
-  "pathToFile" : "src\\main\\resources\\",
-  "fileName" : "pic.jpg"
+  "baseURL" : "https://jsonplaceholder.typicode.com",
+  "postsURL" : "/posts",
+  "99postURL" : "/99",
+  "150postURL" : "/150",
+  "usersURL" : "/users",
+  "5usersURL" : "/5",
+  "pathToJsonFile" : "src/main/resources/user.json",
+  "titleRowName" : "title",
+  "bodyRowName" : "body",
+  "userIdRowName" : "userId",
+  "idRowName" : "id"
 }
