@@ -1,0 +1,14 @@
+{
+  "baseURL" : "https://jsonplaceholder.typicode.com",
+  "postsURL" : "/posts",
+  "99postURL" : "/99",
+  "150postURL" : "/150",
+  "usersURL" : "/users",
+  "5usersURL" : "/5",
+  "pathToJsonFile" : "src/main/resources/user.json",
+  "usersIdValue" : "5",
+  "titleRowName" : "title",
+  "bodyRowName" : "body",
+  "userIdRowName" : "userId",
+  "idRowName" : "id"
+}
