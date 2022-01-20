@@ -1,5 +1,4 @@
 {
-  "delayTime" :  "500",
-  "fileName"  :  "\\avatar.jpg",
-  "expectedResultForTimerTest" : "00:00:00"
+   "wpt" : "wpt",
+   "userID" : "627657327"
 }

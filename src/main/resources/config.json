@@ -1,4 +1,12 @@
 {
-  "wayToFile" :  "\\src\\main\\resources",
-  "baseURL" : "https://userinyerface.com/game.html%20target="
+  "baseURL": "https://vk.com/",
+  "urlScheme" : "http",
+  "urlHost" : "api.vk.com",
+  "urlPath" : "/method/",
+  "emailOrPhone" : "",
+  "password" : "",
+  "accessToken" : "",
+  "version" : "5.131",
+  "pathToFile" : "src\\main\\resources\\",
+  "fileName" : "pic.jpg"
 }
