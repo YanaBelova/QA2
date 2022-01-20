@@ -1,0 +1,6 @@
+{
+  "baseURL": "https://www.aviasales.by/",
+  "departureDate" : "Mar 02 2022",
+  "arrivalDate" : "Mar 12 2022",
+  "timeOutInSeconds" : 40
+}
